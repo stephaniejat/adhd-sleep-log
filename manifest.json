@@ -1,0 +1,9 @@
+{
+  "id": "adhd-sleep-log",
+  "name": "ADHD Sleep Log",
+  "version": "0.0.1",
+  "minAppVersion": "1.0.0",
+  "description": "Log sleep stages and ADHD data",
+  "author": "Stephanie Jat"
+}
+
