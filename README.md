@@ -7,13 +7,14 @@ ADHD-friendly sleep tracker. Logs YAML frontmatter + summary to active file via 
 - Total sleep as HH:MM (saves "7h 45m").
 - Sleep stages (deep/light/REM/awake min).
 - Restless moments, energy (1-5).
-- Crash-day? (yes/no), Dexamfetamine (none/am/pm).
+- Crash-day? (yes/no), Meds (none/am/pm).
 - Appends to active file (e.g., Sleep-Charts.md).
 
 ## Installation
-1. Create plugin folder: `.obsidian/plugins/sleep-log/`. 
-2. Add `main.ts` (from previous messages). 
+1. Create plugin folder: `.obsidian/plugins/adhd-sleep-log/`. 
+2. Add `/src/main.ts`. 
 3. Add `manifest.json`:
+
 ```json
 {
   "id": "sleep-log",
@@ -25,6 +26,7 @@ ADHD-friendly sleep tracker. Logs YAML frontmatter + summary to active file via 
   "isDesktopOnly": false
 }
 ```
+
 4. Enable in Settings → Community plugins → Browse → Load from folder. 
 
 ## Usage
@@ -68,16 +70,19 @@ Dexamfetamine: [am ▼]
 ## Customisation
 - Edit `main.ts` → reload (full restart).
 - Chart YAML: Use Dataview or Tasks plugin (query `sleep_date`, `total_sleep`).
+- Medication: All instances of 'Dex' or 'Dexamfetamine' can be changed to whatever medication you take!
 
 Repo includes:
 ├── main.ts                 # (main changes here!)
+├── SleepCharts.md          # (save this in vault to show Dataview charts)
 ├── manifest.json         	# (metadata changes)
 ├── package.json            # (version etc changed)
 ├── tsconfig.json           
 ├── .gitignore              
 ├── LICENSE					# (MIT)                  
 ├── README.md               
-├── .editorconfig           
+├── .editorconfig 
+├── eslint.config.mjs           
 ├── versions.json           
 ├── version-bump.mjs        
 ├── package-lock.json       # (npm install && git add)
@@ -89,4 +94,4 @@ Repo includes:
 - Errors? Console (Ctrl+Shift+I).
 - No icon? Check manifest ID matches folder.
 
-Built for Obsidian v1.6+ (March 2026). MIT license. 
+Built for Obsidian v1.6+ (March 2026) with help from Perlpexity. MIT license.
