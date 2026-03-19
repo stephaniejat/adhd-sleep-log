@@ -1,9 +1,10 @@
 {
-  "id": "adhd-sleep-log",
+  "id": "sleep-log",
   "name": "ADHD Sleep Log",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "minAppVersion": "1.0.0",
-  "description": "Log sleep stages and ADHD data",
-  "author": "Stephanie Jat"
+  "description": "ADHD sleep tracker with YAML logging and settings.",
+  "author": "Stephanie Jat",
+  "isDesktopOnly": false
 }
 
